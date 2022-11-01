@@ -1,0 +1,20 @@
+body{
+    margin: 0;
+}
+.container{
+    width: 90%;
+    margin: 5px auto;
+
+}
+.box{
+    border: 1px solid #E8E8E8;
+    padding: 10px;
+}
+input{
+    border-bottom: 1px solid #BABABA;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    width: 100%;
+   margin-bottom: 20px;
+}
