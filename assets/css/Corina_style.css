@@ -1,3 +1,7 @@
+li{
+    padding: 15px;
+    font-size: 18px;
+}
 .list_tasks li, .tasks{
     box-shadow: 0 4px 2px -2px gray;
 }
