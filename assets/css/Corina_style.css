@@ -15,6 +15,17 @@ li{
 .list_tasks li, .filtered_tasks{
     border-bottom: 1px solid #BFBFBF;
 }
+.remove{
+    background-color: black;
+    border-radius: 2px;
+    text-align: right;
+    color: #fdfcfc;
+    font-weight: 900;
+    cursor: pointer;
+    font-size: 18px;
+    text-transform: uppercase;
+    float: right;
+}
 .btn_clear_all{
     margin-top: 10px;
     width: 150px;
