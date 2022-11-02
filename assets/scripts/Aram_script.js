@@ -9,9 +9,10 @@ buttonAddTask.addEventListener('click',()=>{
     alert("Write some text!");
   }else {
     const li = document.createElement('li')
-    li.textContent = text;
     ulTasks.append(li)
     allTasks.push(text)
     document.querySelector('.input_task').value = '';
+    li.innerHTML = `${text}<button class="remove"> x </button>`
+
   }
 })
