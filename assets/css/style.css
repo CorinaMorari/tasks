@@ -28,7 +28,7 @@ button{
     border: 1px solid #E8E8E8;
     padding: 10px;
 }
-.task_list_title{
+.title{
     font-size: 24px;
     font-weight: 500;
 }
@@ -57,7 +57,6 @@ button{
     background-color: black;
 }
 .tasks_title{
-    font-size: 24px;
     font-weight: 700;
 }
 .tasks_inf{
