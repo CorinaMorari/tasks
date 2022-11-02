@@ -1,0 +1,23 @@
+.list_tasks li, .tasks{
+    box-shadow: 0 4px 2px -2px gray;
+}
+.tasks_title{
+    font-size: 20px;
+    font-weight: 700;
+}
+.tasks_inf{
+    margin: 0 10px;
+}
+.list_tasks li, .filtered_tasks{
+    border-bottom: 1px solid #BFBFBF;
+}
+.btn_clear_all{
+    margin-top: 10px;
+    width: 150px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+
