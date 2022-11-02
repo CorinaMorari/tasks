@@ -13,7 +13,6 @@ buttonAddTask.addEventListener('click',()=>{
     removeButton.classList.add('remove');
     removeButton.textContent = 'X';
     ulTasks.append(li)
-    // allTasks.push(text)
     document.querySelector('.input_task').value = '';
     li.textContent = text
     li.appendChild(removeButton)
@@ -42,9 +41,9 @@ buttonAddTask.addEventListener('click',()=>{
       console.log(itemValue)
 
         if (itemValue.includes(filterValue)){
-          item.style.display = 'block';
+          item.classList.remove('none')
         }else {
-          item.style.display = 'none';
+          item.classList.add('none')
         }
 
     });
