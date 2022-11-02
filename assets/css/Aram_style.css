@@ -1,0 +1,19 @@
+
+.task_list_title{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.user_indication{
+    font-size: 12px;
+    color: gray;
+}
+
+.btn_add {
+    margin-top: 10px;
+    width: 150px;
+    padding: 10px;
+    background-color: #27A69A;
+    color: white;
+    border: none;
+}
