@@ -62,6 +62,11 @@ button{
 .tasks_inf{
     margin: 0 10px;
 }
+.date{
+    float: right;
+    margin: 8px 5px;
+    font-size: 13px;
+}
 .remove{
     background-color: rgba(0, 0, 0, 0.85);
     border-radius: 2px;
@@ -74,6 +79,7 @@ button{
     float: right;
     transition: .1s ease-in;
 }
+
 .remove:hover{
     background-color: rgba(255, 0, 40, 0.71);
     border-color: rgba(255, 0, 40, 0.71);
