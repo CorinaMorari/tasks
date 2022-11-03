@@ -69,30 +69,35 @@ filter.addEventListener("input", (ev) => {
         const filterValue = ev.target.value.toLowerCase().trim();
         filteredElements = [];
         if (filterValue !== '') {
-            for (let i = 0; i < allTasks.length; i++) {
+            for (let i = 0 ;i < allTasks.length; i++) {
                 const itemValue = allTasks[i].text.trim().toLowerCase();
                 if (itemValue.includes(filterValue)) {
-                    if (filteredElements.length === 0) {
-                        filteredElements.push({text: allTasks[i].text, index: allTasks[i].index})
-                    } else {
-                        filteredElements.forEach(item => {
-                            if (allTasks[i].index !== item.index) {
-                                filteredElements.push({text: allTasks[i].text, index: allTasks[i].index})
+                   filteredElements.push({text: allTasks[i].text, index: allTasks[i].index})
+                    let count = 0;
+                    filteredElements.forEach(item =>{
+
+                        if(allTasks[i].index === item.index){
+                            count++
+                            if(count > 1){
+                                filteredElements.pop();
                             }
-                        })
-                    }
+                        }
+                    })
+
                 }
             }
             //Got filtredElements
+            console.log("Filtred elements",filteredElements)
             //Show flirted elements
             arrayLi = document.querySelectorAll('li');
             clearAll(arrayLi);
             filteredElements.forEach(item => {
                 createLi(item.text, item.index)
             })
+            filteredElements = []
 
         } else {
-            console.log(filteredElements)
+
             arrayLi = document.querySelectorAll('li');
             clearAll(arrayLi);
             console.log(arrayLi);
